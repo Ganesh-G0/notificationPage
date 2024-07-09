@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="logic.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Notifications <span class="num-of-notifications">3</span></h1>
+        <button class="read-all-btn">Mark all as read</button>
+      </header>
+      <section class="active posted">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Mark Webber</a> reacted to your recent post <a href="#" class="post"> My first tournament today!</a></h2> 
+          <p>1m ago</p>
+        </div>
+      </section>
+      <section class="active followed">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Angela Gray </a> followed you </h2>
+          <p>5m ago</p>
+        </div>
+      </section>
+      <section class="active joined-club">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Jacob Thompson </a> has joined your group <a href="#" class="club">Chess Club</a></h2>
+          <p>1 day ago</p>
+        </div>
+      </section>
+      <section>
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Rizky Hasanuddin </a> sent you a private message </h2>
+          <p>5 days ago</p>
+          <aside>
+            Hello,thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </aside>
+        </div>
+      </section>
+      <section>
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="Profile Picture">
+        <div class="flex flex-col">
+          <h2><a href="#" class="user-name">Kimberly Smith </a> commented on your picture</h2>
+          <p>1 week ago</p>
+        </div>
+        <div class="img-div">
+          <img src="./assets/images/image-chess.webp" alt="Chess Player">
+        </div>
+      </section>
+      <section>
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Nathan Peterson </a>reacted to your recent post <a href="#" class="end-game"> 5 end-game strategies to increase your win rate </a></h2>
+          <p>2 weeks ago</p>
+        </div>
+      </section>
+      <section>
+        <img src="./assets/images/avatar-anna-kim.webp" alt="Profile Picture">
+        <div>
+          <h2><a href="#" class="user-name">Anna Kim </a> left the group <a href="#" class="club">Chess Club</a></h2>
+          <p>2 weeks ago</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

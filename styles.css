@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --veryLightGrayishBlue: hsl(210, 60%, 98%);
+  --lightGrayishBlue1: hsl(211, 68%, 94%);
+  --lightGrayishBlue2: hsl(205, 33%, 90%);
+  --grayishBlue: hsl(219, 14%, 63%);
+  --darkGrayishBlue: hsl(219, 12%, 42%);
+  --veryDarkGrayishBlue: hsl(224, 21%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;  
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px; 
+  border-radius: 1rem;
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;  
+  background: var(--veryDarkGrayishBlue);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+span, a {
+  font-weight: 600;  
+  font-size: 1.5rem;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+p {  
+  font-weight: 600;
+  color: var(--grayishBlue);
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--veryDarkGrayishBlue);
+  background-color: var(--veryLightGrayishBlue);
+}
+/* ----------------------------------------main */
+main {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h1 {
+  font-size: 2rem;
+  color: var(--veryDarkGrayishBlue);
+}
+header > h1 > span {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: .1rem 1rem;
+  border-radius: .6rem;
+}
+header > button {
+  border: 0;
+  background-color: inherit;
+  color: var(--grayishBlue);
+  font-weight: 600;
+  cursor: pointer;
+}
+/* ----------------------------------------section */
+section {
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  cursor: pointer;
+}
+section.active {
+  background-color: var(--veryLightGrayishBlue);  
+}
+section > img {
+  width: 15%;
+  max-width: 5rem;
+}
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}  
+section > div > h2 {  
+  color: var(--grayishBlue);  
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+section > div > p {
+  width: fit-content;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.user-name {
+  color: var(--veryDarkGrayishBlue);
+}
+.post {
+  color: var(--grayishBlue);
+}
+.club {
+  color: var(--blue);
+}
+section.active > div > h2::after {
+  content: ".";
+  background-color: var(--red);
+  border-radius: 50%;
+  padding: 0rem .4rem;
+  margin: 0 .5rem;
+}
+/* ----------------------------------------aside */
+aside {
+  color: var(--grayishBlue);
+  border: 2px solid var(--lightGrayishBlue1);
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.img-div > img {
+  width: 50%;
+  cursor: pointer;
+}
+.end-game {
+  color: var(--darkGrayishBlue);
+}
+@media (hover:hover) {
+  aside:hover {
+    background-color: var(--lightGrayishBlue1);
+  }
+  a:hover {
+    color: var(--blue);
+  }
+  header > button:hover {
+    font-weight: 100;
+    color: var(--blue);
+  }
+}
+@media (hover:none) {
+  aside:active {
+    background-color: var(--lightGrayishBlue1);
+  }
+  a:active {
+    color: var(--blue);
+  }
+  header > button:active {
+    font-weight: 100;
+    color: var(--blue);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    justify-content: center;
+    background-color: var(--lightGrayishBlue2);
+  }
+  main {
+    max-width: 60rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    box-shadow: .5rem .5rem .5rem .5rem var(--grayishBlue);
+  }
+}
